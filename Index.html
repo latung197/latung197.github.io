@@ -4,20 +4,42 @@
 	<meta charset="utf-8">
 	<title>CV cá nhân Lê Văn Tùng</title>
 	<link rel="stylesheet" type="text/css" href="Trangchu.css">
+	<meta name="viewport" content="width=device-wedth, initial-scale=1.0">
 </head>
+
+<!-- 3 cách trèn css vào HTML .
+	Cách 1 :Chỉ chuyển H1 được thêm thành màu xanh
+	<h1 style="color: blue;">Lê Văn Tùng Developer</h1>
+	Cách 2: cú pháp đổ tất cả H1 thành màu xanh
+	<style >
+		h1{color: blue}
+	</style> 
+	Cách 3:
+	Dùng link sang file khác-->
+
 <body>
 <header>
 	<h1>Lê Văn Tùng Developer</h1>
 	<p>Xin chào mọi người mình là lê Văn Tùng</p>
 </header>
 
-<nav>
+<nav id="nav1">
 	<a href="#section1">Chuyển đển phần 1</a>
 	<a href="#section2">Chuyển đến phần 2</a>
 	<a href="#section3">Chuyển đến phần 3</a>
 </nav>
 
-<section id="section1">
+<div class="row">
+
+<section id="section0" class="column">
+	
+	<h1>The section 0</h1>
+	<label for="txtten">Nhập tên:</label>
+<input type="text" id="txtTen" name="" value="">
+<button type="button" id="btnXinchao">Xin chao</button>
+
+</section>
+<section id="section1" class="column">
 	<div class="thongtin">
 	<b>Tên : </b> <i>Lê Văn Tùng Thêm thông tin</i>
 </div>
@@ -40,7 +62,7 @@
 </ol>
 </section>
 
-<section id="section2">
+<section id="section2" class="column">
 	<h1>Một vài thông tin khác</h1>
 	<div class="thongtin">
 	<p>Bạn có muốn liên hệ với tôi: </p>
@@ -50,18 +72,20 @@
 	<b>Link dang ky kenh youtobe </b> <a href="youtobe.com">Link FB</a>
 </div>
 </section>
-<section id="section3">
+<section id="section3" class="column">
 	<p>Ảnh thông tin hihi</p><br>
 	<ol>
 		<li>Mình là Tùng</li>
 		<li>Đây là lần đầu tiên mình làm web</li>
 		<li>Ủng hộ mình nhé</li>
 	</ol>
-	<img src="D:\Sourcecode\CV OF ME\Img\anhnen.jpg" width="300" height="200" alt="anhnen">
+	<img src="D:\Sourcecode\CV OF ME\Img\anhnen.jpg" width="100		" height="100" alt="anhnen">
 </section>
 
+</div>
 <footer>
 <h3>Đây là phân chân trang</h3>	
 </footer>
+<script src="Trangchu.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
